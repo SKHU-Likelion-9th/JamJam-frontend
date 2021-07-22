@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>너와 나의 달달한 소스, JamJam</title>
+    <link href="{% static 'jamjamapp/css/login.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!--로그인 바 구현-->
+    <div class="container">
+        <div class="login-background">
+            <img src="{% static 'jamjamapp/img/loginback.jpg' %}">
+        </div>
+        <div class="login-box">
+            <div class="header">
+                <h1>잼잼 로그인</h1>
+                <br><br>
+                <h2>오직 카카오톡 서비스를 사용하고 있습니다.</h2>
+                <h2>아래 버튼을 눌러 카카오톡을 연결해주세요.</h2>
+            </div>
+
+            <a id="custom-login-btn" href="javascript:loginWithKakao()">
+                <img
+                  src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg"
+                  width="222" 
+                />
+              </a>
+              <p id="token-result"></p>
+              <script type="text/javascript">
+                function loginWithKakao() {
+                  Kakao.Auth.authorize({
+                    redirectUri: 'https://developers.kakao.com/tool/demo/oauth'
+                  })
+                }
+                // 아래는 데모를 위한 UI 코드입니다.
+                displayToken()
+                function displayToken() {
+                  const token = getCookie('authorize-access-token')
+                  if(token) {
+                    Kakao.Auth.setAccessToken(token)
+                    Kakao.Auth.getStatusInfo(({ status }) => {
+                      if(status === 'connected') {
+                        document.getElementById('token-result').innerText = 'login success. token: ' + Kakao.Auth.getAccessToken()
+                      } else {
+                        Kakao.Auth.setAccessToken(null)
+                      }
+                    })
+                  }
+                }
+                function getCookie(name) {
+                  const value = "; " + document.cookie;
+                  const parts = value.split("; " + name + "=");
+                  if (parts.length === 2) return parts.pop().split(";").shift();
+                }
+              </script>
+        </div>
+        
+</body>
+</html>
