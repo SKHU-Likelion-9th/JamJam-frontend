@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'IM_Hyemin-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
@@ -8,6 +10,27 @@
 body {
     background-color: #FEE5E9;
     margin: 0px;
+}
+
+/*scrollbar css*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff99aa;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FFC4CE;
 }
 
 .navbar-base {
@@ -24,7 +47,7 @@ body {
     top: 15px;
 }
 
-ul {
+.navbar-first {
     list-style-type: none;
     margin: 0;
 }
@@ -71,28 +94,6 @@ li a:hover {
 
 .navbar-link-logout {
     margin-left: 10px;
-}
-
-
-/*scrollbar css*/
-
-/* width */
-::-webkit-scrollbar {
-    width: 20px;
-}
-  /* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-  
-  /* Handle */
-::-webkit-scrollbar-thumb {
-    background: #ff99aa;
-}
-
-  /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #FFC4CE;
 }
 
 .ddaybox {
@@ -158,4 +159,222 @@ a {
     position: relative;
     left: 230px;
     margin-bottom: 100px;
+}
+
+/* 여기서부터 community 관련 css */
+
+.commu-menu {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family : 'IM_Hyemin-Bold';
+    font-size: 30pt;
+    color: #c56172;
+}
+
+.teen {
+    width: 25%;
+    text-align: center;
+}
+
+.adult {
+    width: 25%;
+    text-align: center;
+}
+
+.free {
+    width: 25%;
+    text-align: center;
+}
+
+.sex {
+    width: 25%;
+    text-align: center;
+}
+
+.commu-dropdown {
+    width: 10%;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 6%;
+}
+
+.commu-dd-btn {
+    background-color: #ff7a91;
+    color: white;
+    font-family : 'IM_Hyemin-Bold';
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    border: none;
+}
+
+.commu-dd-content {
+    display: none;
+    position: absolute;
+    background-color: #FFC4CE;
+    min-width: 150px;
+}
+
+.commu-dd-content a {
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.commu-dd-content a:hover {background-color: #ddd;}
+
+.commu-dropdown:hover .commu-dd-content {display: block;}
+
+.commu-dropdown:hover .commu-dd-btn {background-color: #ff7a91;}
+
+/* search bar CSS starts here */
+:root{
+    --clr-main:#ffb0bb;
+    --clr-input:#ece6e6;
+}
+
+.search {
+    margin-left: 2%;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.search form{
+   display: flex;
+   height: 80px;
+}
+
+.search input{
+    border: 1px solid var(--clr-main);
+    outline: none;
+    padding: .8em .4em;
+    color: var(--clr-dark-input);
+    font-family: 'IM_Hyemin-Bold';
+    font-size: 25px;
+}
+
+.search input::placeholder{
+    font-family : 'IM_Hyemin-Bold';
+    font-size: 25px;
+}
+
+.search button{
+    border: none;
+    outline: none;
+    background: var(--clr-main);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+button svg{
+    box-sizing: content-box; 
+    --size: 20px;
+    width: var(--size);
+    height: var(--size);
+    fill: white;
+}
+/* search bar CSS ends here ---*/
+
+.commu-write-btn {
+    margin-left: 15%;
+    position: relative;
+    display: inline-block;
+}
+
+.write-btn {
+    background-color: #ff7a91;
+    color: white;
+    font-family : 'IM_Hyemin-Bold';
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    border: none;
+}
+
+/* 커뮤니티 horizon */
+
+.commu-hr {
+    background-color: #FEE5E9;
+    border-top: 3px dashed #c56172;
+}
+
+/* 커뮤 글 목록 css */
+
+table.commu-table {
+    font-family : 'IM_Hyemin-Bold';
+    font-size: 25px;
+    color: #c56172;
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+table.commu-table th {
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: fff;
+}
+
+table.commu-table td {
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 페이지네이션 */
+
+.commu-page-li {
+    list-style: none;
+}
+
+.commu-page-ul {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li.commu-page {
+    margin: 0 0 0 0;
+    margin-bottom: 30px;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+}
+
+li.commu-page-li a {
+    margin-left: 60px;
+    color: #ff7a91;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'IM_Hyemin-Bold';
+}
+
+li.commu-page-li a:hover {
+    color: #fff;
 }

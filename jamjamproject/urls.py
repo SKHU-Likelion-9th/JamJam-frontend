@@ -23,4 +23,5 @@ urlpatterns = [
     path('layout2/', jamjamapp.views.layout2, name='layout2'),
     path('login', jamjamapp.views.login, name='login'),
     path('main/', jamjamapp.views.main, name='main'),
+    path('community/', jamjamapp.views.community, name='community'),
 ]
