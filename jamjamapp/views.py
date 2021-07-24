@@ -21,3 +21,11 @@ def main(request):
 def community(request):
     return render(request, 'community/community.html')
 
+def commu_write(request):
+    return render(request, 'community/commu_write.html')
+
+def commu_edit(request):
+    return render(request, 'community/commu_edit.html')
+
+def detail(request):
+    return render(request, 'community/detail.html')
