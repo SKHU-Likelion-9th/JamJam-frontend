@@ -29,3 +29,9 @@ def commu_edit(request):
 
 def detail(request):
     return render(request, 'community/detail.html')
+
+def mypage(request):
+    return render(request, 'mypage/mypage.html')
+
+def profile(request):
+    return render(request, 'mypage/profile.html')

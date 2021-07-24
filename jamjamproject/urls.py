@@ -27,4 +27,6 @@ urlpatterns = [
     path('commu_write/', jamjamapp.views.commu_write, name='commu_write'),
     path('commu_edit/', jamjamapp.views.commu_edit, name='commu_edit'),
     path('detail/', jamjamapp.views.detail, name='detail'),
+    path('mypage/', jamjamapp.views.mypage, name='mypage'),
+    path('profile/', jamjamapp.views.profile, name='profile'),
 ]
