@@ -35,3 +35,7 @@ def mypage(request):
 
 def profile(request):
     return render(request, 'mypage/profile.html')
+
+def day_detail(request):
+    return render(request, 'day_detail.html')
+

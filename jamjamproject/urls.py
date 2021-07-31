@@ -29,4 +29,5 @@ urlpatterns = [
     path('detail/', jamjamapp.views.detail, name='detail'),
     path('mypage/', jamjamapp.views.mypage, name='mypage'),
     path('profile/', jamjamapp.views.profile, name='profile'),
+    path('day_detail/', jamjamapp.views.day_detail, name='day_detail'),
 ]
