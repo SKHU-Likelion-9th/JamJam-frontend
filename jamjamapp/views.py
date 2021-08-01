@@ -62,3 +62,9 @@ def option(request):
 
 def shop(request):
     return render(request, 'shop/shop.html')
+
+def diary_edit(request):
+    return render(request, 'diary_edit.html')
+
+def jampay(request):
+    return render(request, 'shop/jampay.html')
