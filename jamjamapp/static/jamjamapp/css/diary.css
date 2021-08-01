@@ -49,3 +49,12 @@
     left: 90%;
     padding-bottom: 2%;
 }
+
+
+/* diary.html 디자인을 위해 추가,
+side navbar로 인해 margin-left 전체 먹여놓음 */
+
+.diary-body {
+    margin-left: 15%;
+    display: inline-block;
+}

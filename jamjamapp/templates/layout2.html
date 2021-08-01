@@ -1,52 +1,34 @@
 {% load static %}
+{% load static %}
 
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>너와 나의 달달한 소스, JamJam</title>
 
+    {% block head %}
+    <title>너와 나의 달달한 소스, JamJam</title>
+    {% endblock %}
+    
     <link href="{% static 'jamjamapp/css/layout2.css' %}" rel="stylesheet" />
 
 </head>
 
 <body>
-    <!--사이드바 구현-->
-    <div clsas="layout2-container">
-        <div class="sidebar">
-            <img class="navbar-sidebar" src="{% static 'jamjamapp/img/sidebar_des.png' %}">
-            <h1><img class="navbar-brand" src="{% static 'jamjamapp/img/logo.png' %}"></h1>
-            <ul>
-                <li>
-                    <img class="sidebar-jam-count-icon" src="{% static 'jamjamapp/img/jam_white.png' %}" weight="30" height="30" style="">
-                    <a class="sidebar-jam-count">2개임</a>
-                </li>
-                <li>
-                    <a class="sidebar-link-logout" href="">로그아웃</a>  
-                </li>
-                <li>
-                    <a class="sidebar-link-diary" href="">다이어리</a>
-                </li>
-                <li>
-                    <a class="sidebar-link-community" href="">커뮤니티</a>
-                </li>
-                <li>
-                    <a class="sidebar-link-course" href="">코스</a>
-                </li>
-                <li>
-                    <a class="sidebar-link-jamshop" href="">잼샵</a>
-                </li>
-                <li>
-                    <a class="sidebar-link-mypage" href="">마이페이지</a>
-                </li>
-            </ul>   
-        </div>
-        <div class="contents-space">
-            {% block contents %}
-            {% endblock %}
-        </div>
-    </div>
+    <!-- layout2 아예 싹 다 고침 -->
+    <ul>
+        <a href="#"><img class="navbar-brand" src="{% static 'jamjamapp/img/logo.png' %}"></a>
+        <li style="margin-top: 10%;"><a href="#">다이어리</a></li>
+        <li><a class="active" href="#">커뮤니티</a></li>
+        <li><a href="#">코스</a></li>
+         <li><a href="#">잼샵</a></li>
+        <li><a href="#t">마이페이지</a></li>
+    </ul>
+    
+    </body>
+    {% block contents %}
+    {% endblock %}
 
 </body>
 </html>

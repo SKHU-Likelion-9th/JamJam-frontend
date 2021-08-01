@@ -53,3 +53,6 @@ def course(request):
 
 def purchase_example(request):
     return render(request, 'mypage/purchase_example.html')
+
+def diary(request):
+    return render(request, 'diary.html')

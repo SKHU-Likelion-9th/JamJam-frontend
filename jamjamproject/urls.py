@@ -36,4 +36,5 @@ urlpatterns = [
     path('theme/', jamjamapp.views.theme, name='theme'),
     path('course/', jamjamapp.views.course, name='course'),
     path('purchase_example/', jamjamapp.views.purchase_example, name='purchase_example'),
+    path('diary/', jamjamapp.views.diary, name='diary'),
 ]
