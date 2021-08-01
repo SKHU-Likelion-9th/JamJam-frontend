@@ -1,0 +1,51 @@
+.days {
+    width: 100%;
+}
+
+.heart {
+    color: #ff7a91;
+    display: inline-block;
+    width: 5%;
+    margin-left: 40%;
+}
+
+.whatdays {
+    display: inline-block;
+    width: 10%;
+}
+
+.ddays-container {
+    width: 100%;
+}
+
+.ddays {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    border: solid 7px #fd99aa;
+    background-color: #ffffff;
+}
+
+.ddays-date {
+    font-family: 'IM_Hyemin-Bold';
+    font-size: 30px;
+    color: #c56172;
+}
+
+
+.ddays-content {
+    width: 100%;
+    margin-left: 50%;
+}
+
+
+.plus-icon {
+    color:#c56172;
+    position: absolute;
+    left: 90%;
+    padding-bottom: 2%;
+}
