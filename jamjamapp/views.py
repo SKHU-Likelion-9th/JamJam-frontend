@@ -47,3 +47,9 @@ def day_detail(request):
 
 def theme(request):
     return render(request, 'shop/theme.html')
+
+def course(request):
+    return render(request, 'course.html')
+
+def purchase_example(request):
+    return render(request, 'mypage/purchase_example.html')
