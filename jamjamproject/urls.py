@@ -37,4 +37,6 @@ urlpatterns = [
     path('course/', jamjamapp.views.course, name='course'),
     path('purchase_example/', jamjamapp.views.purchase_example, name='purchase_example'),
     path('diary/', jamjamapp.views.diary, name='diary'),
+    path('option/', jamjamapp.views.option, name='option'),
+    path('shop/', jamjamapp.views.shop, name='shop'),
 ]

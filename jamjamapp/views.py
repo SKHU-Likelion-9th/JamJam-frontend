@@ -56,3 +56,9 @@ def purchase_example(request):
 
 def diary(request):
     return render(request, 'diary.html')
+
+def option(request):
+    return render(request, 'shop/option.html')
+
+def shop(request):
+    return render(request, 'shop/shop.html')
