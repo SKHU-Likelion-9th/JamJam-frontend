@@ -47,3 +47,6 @@ def day_detail(request):
 
 def theme(request):
     return render(request, 'shop/theme.html')
+
+def diary(request):
+    return render(request, 'diary.html')

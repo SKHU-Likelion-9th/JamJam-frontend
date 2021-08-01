@@ -1,14 +1,5 @@
 /* mypage.html */
 
-.mypage-container {
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: repeat(3, 20%);
-    grid-column-gap: 10%;
-    align-items: center;
-    justify-content: center;
-    
-}
 
 .mypage-box {
     background-color: #FEEFF2;
@@ -66,22 +57,25 @@
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
 
-.connection-box {
-    width: 600px;
+.connection-body { /* connection-body 추가 */
+    width: 100%;
+}
+
+.connection-box { /* 수정 */
+    width: 20%;
     height: 150px;
     background-color: #fd99aa;
-    left: 34%;
+    left: 40%;
+    right: 40%;
     position: absolute;
-    
 }
 
 .connection-box > h2 {
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 /* purchaselist.html */

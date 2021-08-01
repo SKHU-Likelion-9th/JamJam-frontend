@@ -6,111 +6,42 @@
 }
 
 body {
-    background-color: #FEE5E9;
-    margin: 0px;
-}
-
-.layout2-container {
-    display: flex;
-
-}
-
-.contents-space {   
-    background-color: white;
-    border: 1px solid #484848;
-}
-
-.sidebar {
-    display: inline;
-    position: static;
-}
-
-.navbar-sidebar {
-    position: relative;
-    height: 40%;
-}
-
-.navbar-brand {
-    position: absolute;
-    width: 200px;
-    left: 50px;
-    top: 15px;
+    font-family: 'IM_Hyemin-Bold';
+    margin: 0;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-}
-
-li {
-    line-height: 3;
-    padding: 0 20px;
-    font-size: 20px;
-    color: white;
-}
-
-.sidebar-jam-count-icon {
-    position: absolute;
-    top: 140px;
-    left: 100px;
-}
-
-.sidebar-jam-count {
-    position: absolute;
-    top: 120px;
-    left: 140px;
-}
-
-.sidebar-link-logout {
-    position: absolute;
-    top: 180px;
-    left: 100px;
-}
-
-.sidebar-link-diary {
-    position: absolute;
-    top: 240px;
-    left: 100px;
-}
-
-.sidebar-link-community {
-    position: absolute;
-    top: 300px;
-    left: 100px;
-}
-
-.sidebar-link-course {
-    position: absolute;
-    top: 360px;
-    left: 100px;
-}
-
-.sidebar-link-jamshop {
-    position: absolute;
-    top: 420px;
-    left: 100px;
-}
-
-.sidebar-link-mypage {
-    position: absolute;
-    top: 480px;
-    left: 100px;
+    padding: 0;
+    width: 15%;
+    background-color: #FFC4CE;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
 li a {
-    color: #ffffff;
-    font-size: 25px;
+    display: block;
+    color: #c56172;
+    padding: 8px 0 8px 16px;
     text-decoration: none;
-    font-weight: bold;
-    font-family: 'IM_Hyemin-Bold';
+    font-size: 30px;
 }
 
-li a:hover {
-    color: #ff7a91;
+li a.active {
+    background-color: white;
+    color: #c56172;
 }
 
-li a:hover {
-    color: #ff7a91;
+li a:hover:not(.active) {
+    background-color: #ff7a91;
+    color: white;
+}
+
+.navbar-brand {
+    width: 80%;
+    padding: 20px;
 }
 
 /*scrollbar css*/
@@ -133,4 +64,3 @@ li a:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: #FFC4CE;
 }
-

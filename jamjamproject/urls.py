@@ -34,4 +34,5 @@ urlpatterns = [
     path('profile_edit/', jamjamapp.views.profile_edit, name='profile_edit'),
     path('day_detail/', jamjamapp.views.day_detail, name='day_detail'),
     path('theme/', jamjamapp.views.theme, name='theme'),
+    path('diary/', jamjamapp.views.diary, name='diary'),
 ]
