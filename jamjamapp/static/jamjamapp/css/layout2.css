@@ -10,6 +10,21 @@ body {
     margin: 0px;
 }
 
+.layout2-container {
+    display: flex;
+
+}
+
+.contents-space {   
+    background-color: white;
+    border: 1px solid #484848;
+}
+
+.sidebar {
+    display: inline;
+    position: static;
+}
+
 .navbar-sidebar {
     position: relative;
     height: 40%;

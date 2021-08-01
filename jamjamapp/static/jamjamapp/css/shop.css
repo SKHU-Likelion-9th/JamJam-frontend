@@ -1,5 +1,9 @@
 /* theme.html */
 .shop-container {
     display: grid;
-    grid-template-columns: (1, 30%)
+    grid-template-columns: 30% 30% 30%;
+}
+
+.shop-item {
+    background-color: #FECDD6;
 }

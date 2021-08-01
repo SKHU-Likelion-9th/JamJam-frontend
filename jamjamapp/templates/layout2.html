@@ -13,37 +13,40 @@
 
 <body>
     <!--사이드바 구현-->
-    <div class="sidebar">
-        <img class="navbar-sidebar" src="{% static 'jamjamapp/img/sidebar_des.png' %}">
-        <h1><img class="navbar-brand" src="{% static 'jamjamapp/img/logo.png' %}"></h1>
-        <class="navbar-second">
-        <ul>
-            <li>
-                <img class="sidebar-jam-count-icon" src="{% static 'jamjamapp/img/jam_white.png' %}" weight="30" height="30" style="">
-                <a class="sidebar-jam-count">2개임</a>
-            </li>
-            <li>
-                <a class="sidebar-link-logout" href="">로그아웃</a>  
-            </li>
-            <li>
-                <a class="sidebar-link-diary" href="">다이어리</a>
-            </li>
-            <li>
-                <a class="sidebar-link-community" href="">커뮤니티</a>
-            </li>
-            <li>
-                <a class="sidebar-link-course" href="">코스</a>
-            </li>
-            <li>
-                <a class="sidebar-link-jamshop" href="">잼샵</a>
-            </li>
-            <li>
-                <a class="sidebar-link-mypage" href="">마이페이지</a>
-            </li>
-        </ul>   
+    <div clsas="layout2-container">
+        <div class="sidebar">
+            <img class="navbar-sidebar" src="{% static 'jamjamapp/img/sidebar_des.png' %}">
+            <h1><img class="navbar-brand" src="{% static 'jamjamapp/img/logo.png' %}"></h1>
+            <ul>
+                <li>
+                    <img class="sidebar-jam-count-icon" src="{% static 'jamjamapp/img/jam_white.png' %}" weight="30" height="30" style="">
+                    <a class="sidebar-jam-count">2개임</a>
+                </li>
+                <li>
+                    <a class="sidebar-link-logout" href="">로그아웃</a>  
+                </li>
+                <li>
+                    <a class="sidebar-link-diary" href="">다이어리</a>
+                </li>
+                <li>
+                    <a class="sidebar-link-community" href="">커뮤니티</a>
+                </li>
+                <li>
+                    <a class="sidebar-link-course" href="">코스</a>
+                </li>
+                <li>
+                    <a class="sidebar-link-jamshop" href="">잼샵</a>
+                </li>
+                <li>
+                    <a class="sidebar-link-mypage" href="">마이페이지</a>
+                </li>
+            </ul>   
+        </div>
+        <div class="contents-space">
+            {% block contents %}
+            {% endblock %}
+        </div>
     </div>
-    <div class="main">
 
-    </div>
 </body>
 </html>
