@@ -17,15 +17,16 @@
 
 <body>
     <!-- layout2 아예 싹 다 고침 -->
-    <ul>
-        <a href="#"><img class="navbar-brand" src="{% static 'jamjamapp/img/logo.png' %}"></a>
-        <li style="margin-top: 10%;"><a href="#">다이어리</a></li>
-        <li><a class="active" href="#">커뮤니티</a></li>
-        <li><a href="#">코스</a></li>
-         <li><a href="#">잼샵</a></li>
-        <li><a href="#t">마이페이지</a></li>
-    </ul>
-    
+    <div class="wrapper">
+        <ul>
+            <a href="#"><img class="navbar-brand" src="{% static 'jamjamapp/img/logo.png' %}"></a>
+            <li style="margin-top: 10%;"><a href="#">다이어리</a></li>
+            <li><a class="active" href="#">커뮤니티</a></li>
+            <li><a href="#">코스</a></li>
+             <li><a href="#">잼샵</a></li>
+            <li><a href="#t">마이페이지</a></li>
+        </ul>
+    </div>
     </body>
     {% block contents %}
     {% endblock %}

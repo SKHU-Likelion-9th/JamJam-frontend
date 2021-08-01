@@ -58,3 +58,53 @@ side navbar로 인해 margin-left 전체 먹여놓음 */
     margin-left: 15%;
     display: inline-block;
 }
+
+.diary-container {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 100%;
+    padding: 20px;
+    height: 900px;
+    background-color: #FFC4CE;
+}
+
+.diary-date {
+    font-size: 40px;
+    padding: 30px;
+    margin-left: 20%;
+}
+
+.diary-input {
+    border-radius: 0;
+    outline: 0;
+    outline-style: none;
+    color: #c56172;
+    font-size: 30px;
+    font-family: 'IM_Hyemin-Bold';
+    white-space: pre-line;
+}
+
+.save-btn {
+    height: 45px;
+    padding: 10px 10px;
+    font-size: 30px;
+    font-family: 'IM_Hyemin-Bold';
+    background-color: #fff;
+    border: #fff;
+}
+
+.diary-save {
+    text-decoration: none;
+    color: #c56172;
+}
+
+.diary-delete-button {
+    background-color: #ff7a91;
+    color: white;
+    font-family : 'IM_Hyemin-Bold';
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}

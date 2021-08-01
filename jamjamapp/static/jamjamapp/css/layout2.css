@@ -10,6 +10,20 @@ body {
     margin: 0;
 }
 
+.wrapper {
+
+    -ms-overflow-style: none; /* IE and Edge */
+
+    scrollbar-width: none; /* Firefox */
+
+}
+
+.wrapper ::-webkit-scrollbar {
+
+    display: none; /* Chrome, Safari, Opera*/
+
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -24,7 +38,7 @@ ul {
 li a {
     display: block;
     color: #c56172;
-    padding: 8px 0 8px 16px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 30px;
 }
@@ -44,23 +58,3 @@ li a:hover:not(.active) {
     padding: 20px;
 }
 
-/*scrollbar css*/
-
-/* width */
-::-webkit-scrollbar {
-    width: 20px;
-}
-  /* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-  
-  /* Handle */
-::-webkit-scrollbar-thumb {
-    background: #ff99aa;
-}
-
-  /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #FFC4CE;
-}
