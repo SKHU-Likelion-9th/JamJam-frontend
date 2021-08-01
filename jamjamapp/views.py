@@ -35,3 +35,12 @@ def mypage(request):
 
 def profile(request):
     return render(request, 'mypage/profile.html')
+
+def connection(request):
+    return render(request, 'mypage/connection.html')
+
+def purchaselist(request):
+    return render(request, 'mypage/purchaselist.html')
+
+def profile_edit(request):
+    return render(request, 'mypage/profile_edit.html')

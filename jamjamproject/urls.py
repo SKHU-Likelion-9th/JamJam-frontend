@@ -29,4 +29,7 @@ urlpatterns = [
     path('detail/', jamjamapp.views.detail, name='detail'),
     path('mypage/', jamjamapp.views.mypage, name='mypage'),
     path('profile/', jamjamapp.views.profile, name='profile'),
+    path('connection', jamjamapp.views.connection, name='connection'),
+    path('purchaselist', jamjamapp.views.purchaselist, name='purchaselist'),
+    path('profile_edit/', jamjamapp.views.profile_edit, name='profile_edit'),
 ]

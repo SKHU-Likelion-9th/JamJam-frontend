@@ -1,7 +1,9 @@
+/* mypage.html */
+
 .mypage-container {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(6, 200px);
+    grid-template-columns: repeat(3, 400px);
     grid-column-gap: 10%;
     align-items: center;
     justify-content: center;
@@ -58,4 +60,72 @@
     font-family: 'IM_Hyemin-Bold';
     font-size: 30px;
     color: #c56172;
+}
+
+/* connection.html */
+.connection-container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.connection-box {
+    width: 600px;
+    height: 150px;
+    background-color: #fd99aa;
+    left: 34%;
+    position: absolute;
+    
+}
+
+.connection-box > h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* purchaselist.html */
+.purchaselist-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows:repeat(2,500px);
+}
+
+.survice-boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows:repeat(2, 200px);
+    grid-template-areas:
+    "box1 box1 box2"
+    "box1 box1 box3";
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+.pur-survice-box {
+    background-color: #ffcdd6;
+    grid-area: box1;
+    justify-content: center;
+
+}
+.pur-look-box {
+    background-color: #fd99aa;
+    grid-area: box2;
+    
+}
+
+.pur-delete-box {
+    background-color: #fd99aa;
+    grid-area: box3;
+}
+
+.pur-look-box > h2 {
+    color: white;
+    text-align: center;
+}
+
+.pur-delete-box > h2 {
+    color: white;
+    text-align: center;
 }
