@@ -122,3 +122,57 @@
     color: white;
     text-align: center;
 }
+
+/* purchase_example.html */
+.purchase-ex-container {
+    left: 10%;
+    display: grid;
+    grid-template-columns: 15% 7fr 2fr 10%;
+    grid-template-rows: px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pur-contents > h2{
+    display: inline;
+    font-size: 50pt;
+}
+
+.pur-contents {
+    grid-column: 2/3
+}
+
+.pur-contents > p {
+    font-size: 30pt;
+}
+
+.pur-blocks {
+    grid-column: 3/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+
+}
+
+.pur-blocks h1 {
+    color: white;
+}
+
+.pur-block-apply h1 {
+    color: green;
+
+}
+
+.pur-block-back {
+    background-color: #fd99aa;
+    grid-row: 4/5;  
+
+}
+
+.pur-block-delete {
+    background-color: #fd99aa;
+}
+
+.pur-block-apply {
+    background-color: #fd99aa;
+}
