@@ -128,7 +128,6 @@
     left: 10%;
     display: grid;
     grid-template-columns: 15% 7fr 2fr 10%;
-    grid-template-rows: px;
     align-items: center;
     justify-content: center;
 }
