@@ -5,6 +5,8 @@
     font-style: normal;
 }
 
+/* 여기서부터 layout2.css 수정 */
+
 body {
     font-family: 'IM_Hyemin-Bold';
     margin: 0;
@@ -45,6 +47,8 @@ body {
 
 }
 
+/* 여기까지  layout2.css 수정 */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -70,7 +74,7 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-    background-color: #FFC4CE;
+    background-color: #ff7a91;
     color: white;
 }
 
