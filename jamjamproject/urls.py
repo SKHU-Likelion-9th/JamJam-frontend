@@ -35,10 +35,12 @@ urlpatterns = [
     path('day_detail/', jamjamapp.views.day_detail, name='day_detail'),
     path('theme/', jamjamapp.views.theme, name='theme'),
     path('course/', jamjamapp.views.course, name='course'),
+    path('course_detail/', jamjamapp.views.course_detail, name='course_detail'),
     path('purchase_example/', jamjamapp.views.purchase_example, name='purchase_example'),
     path('diary/', jamjamapp.views.diary, name='diary'),
     path('option/', jamjamapp.views.option, name='option'),
     path('shop/', jamjamapp.views.shop, name='shop'),
     path('diary_edit/', jamjamapp.views.diary_edit, name='diary_edit'),
     path('jampay/', jamjamapp.views.jampay, name='jampay'),
+    path('scrap/', jamjamapp.views.scrap, name='scrap'),
 ]

@@ -51,6 +51,9 @@ def theme(request):
 def course(request):
     return render(request, 'course.html')
 
+def course_detail(request):
+    return render(request, 'course_detail.html')
+
 def purchase_example(request):
     return render(request, 'mypage/purchase_example.html')
 
@@ -68,3 +71,6 @@ def diary_edit(request):
 
 def jampay(request):
     return render(request, 'shop/jampay.html')
+    
+def scrap(request):
+    return render(request, 'scrap.html')
