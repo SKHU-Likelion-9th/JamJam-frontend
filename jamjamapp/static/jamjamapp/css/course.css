@@ -29,8 +29,44 @@ button a:hover {
     color: #ff7a91;
 }
 
-select {
+.course-nav {
+    text-decoration: none;
+    color: #c56172;
+}
+
+.course-nav:hover {
+    color: #ff7a91; 
+}
+
+.play-things {
     width: 30%;
+    margin-top: 2%;
+    font-size: 30px;
+    display: inline-block;
+    float: left;
+    text-align: center; 
+}
+
+.see-things {
+    width: 30%;
+    margin-top: 2%;
+    font-size: 30px;
+    display: inline-block;
+    float: left;
+    text-align: center; 
+}
+
+.eat-things {
+    width: 30%;
+    margin-top: 2%;
+    font-size: 30px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+select {
+    width: 20%;
     margin-top: 2%;
     margin-left: 2%;
     padding: .3em .3em;
@@ -291,4 +327,146 @@ li .comment-btn {
     font-family: 'IM_Hyemin-Bold';
     background-color: #fff;
     border: #fff;
+}
+
+/* course_detail.html */
+
+
+.course-h3 {
+    display: inline-block;
+    text-align: left;
+    margin-left: 15%;
+    width: 10%;
+    font-weight: bold;
+    color: #c56172;
+    font-size: 25px;
+    font-family: 'IM_Hyemin-Bold';
+}
+
+.course-h4 {
+    display: inline-block;
+    text-align: right;
+    margin-left: 5px;
+    font-weight: bold;
+    color: #c56172;
+    font-size: 25px;
+    font-family: 'IM_Hyemin-Bold';
+}
+
+select {
+    width: 30%;
+    padding: .8em .5em;
+    font-family: inherit;
+    background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #fff;
+    border-radius: 0px;
+    color: #c56172;
+    font-size: 25px;
+    font-family: 'IM_Hyemin-Bold';
+  }
+  
+select::-ms-expand {
+    /* for IE 11 */
+    display: none;
+}
+
+.course-input {
+    width: 60%;
+    position: relative;
+    display: inline-block;
+}
+
+.course-input input {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    line-height: normal;
+    padding: .8em .5em;
+    border: 1px solid #fd99aa;
+    border-radius: 0;
+    outline: 0;
+    outline-style: none;
+    color: #c56172;
+    font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
+    white-space: pre-line;
+}
+
+.content textarea {
+    width: 60%;
+    margin-left: 20%;
+    line-height: normal;
+    padding: .8em .5em;
+    border: 1px solid #fd99aa;
+    border-radius: 0;
+    outline: 0;
+    outline-style: none;
+    color: #c56172;
+    font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
+    white-space: pre-line;
+}
+
+.filebox label {
+    position: relative;
+    display: inline-block;
+    bottom: 80px;
+    left: 50%;
+    padding: .5em .75em;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #fd99aa;
+    cursor: pointer;
+    border: 1px solid #c56172;
+    border-radius: .25em;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+  
+.filebox label:hover {
+    background-color: #fd99aa
+}
+
+.filebox label:active {
+    background-color: #c67172;
+}
+  
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.course-write-btn {
+    margin-left: 15%;
+    position: relative;
+    display: inline-block;
+}
+
+.write-btn {
+    background-color: #ff7a91;
+    color: white;
+    font-family : 'IM_Hyemin-Bold';
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    border: none;
+}
+
+.course-hr {
+    background-color: #FEE5E9;
+    border-top: 3px dashed #c56172;
 }

@@ -8,12 +8,16 @@
 {% endblock %}
 {% block contents %}
   <link href="{% static 'jamjamapp/css/course.css' %}" rel="stylesheet" />
-
+  
 <div class="course-body">
+
+
+    <div class="play-things"><a class="course-nav" href="#">놀거리</a></div>
+    <div class="see-things"><a class="course-nav" href="#">볼거리</a></div>
+    <div class="eat-things"><a class="course-nav" href="#">먹을거리</a></div>
 
     <button class="search-btn" type="submit">
     <a class="course-search" href="#">지역 검색</a></button>
-
 
      <div class="course-filter">
         <select>
@@ -23,7 +27,6 @@
             <option>댓글순</option>
         </select>
       </div>
-
 
       <div class="card">
         <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Seoul_Gyeongbok-gung-3.jpg/414px-Seoul_Gyeongbok-gung-3.jpg" alt="Avatar" style="width:100%">

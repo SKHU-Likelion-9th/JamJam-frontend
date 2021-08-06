@@ -24,8 +24,8 @@ def commu_write(request):
 def commu_edit(request):
     return render(request, 'community/commu_edit.html')
 
-def detail(request):
-    return render(request, 'community/detail.html')
+def commu_detail(request):
+    return render(request, 'community/commu_detail.html')
 
 def mypage(request):
     return render(request, 'mypage/mypage.html')
@@ -49,10 +49,16 @@ def theme(request):
     return render(request, 'shop/theme.html')
 
 def course(request):
-    return render(request, 'course.html')
+    return render(request, 'course/course.html')
 
 def course_detail(request):
-    return render(request, 'course_detail.html')
+    return render(request, 'course/course_detail.html')
+
+def course_write(request):
+    return render(request, 'course/course_write.html')
+
+def course_edit(request):
+    return render(request, 'course/course_edit.html')
 
 def purchase_example(request):
     return render(request, 'mypage/purchase_example.html')
