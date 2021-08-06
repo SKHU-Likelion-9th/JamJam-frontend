@@ -11,7 +11,7 @@ body {
     background-color: #FFC4CE;
 }
 
-.container {
+.login-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,14 +20,19 @@ body {
 } 
 
 .login-box {
-    width:30%;
+    width:25%;
     height: 600px;
     background-color: white;
     border-radius: 40px;
-    box-shadow: 0px 20px 15px 5px rgba(253, 153, 170, 0.2);
     position: absolute;
     right: 10%;
-    
+    padding: 50px 70px 50px 70px; 
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.login-body {
+    padding: 20px 30px 20px 30px;
 }
 
 .login-background {
@@ -35,10 +40,9 @@ body {
     height: 100%;
 }
 
-#custom-login-btn {
-    position: absolute;
-    left: 30%;
-    top: 80%;
+.login-content {
+    position: relative;
+    margin: 10px 0;
 }
 
 h1 {
@@ -46,11 +50,17 @@ h1 {
     font-family: 'IM_Hyemin-Bold';
 }
 
-.header {
-    padding: 10%;
-}
-
 h2 {
     text-align: center;
     font-family: 'IM_Hyemin-Bold';
 }
+
+.login-header h1 {
+    text-align: left;
+}
+
+
+.login-box h1 {
+    font-size: 50px;
+}
+
