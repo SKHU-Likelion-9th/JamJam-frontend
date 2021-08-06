@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>너와 나의 달달한 소스, JamJam</title>
+    <link href="{% static 'jamjamapp/css/login.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!--로그인 바 구현-->
+    <div class="login-container">
+        <div class="login-background">
+            <img src="{% static 'jamjamapp/img/loginback.jpg' %}">
+        </div>
+        <div class="login-box">
+            <div class="login-header">
+                <h1>잼잼 로그인</h1>
+                <p class="inform-if">처음 사용하는 유저라면?</p>
+                <a href="#">회원가입</a>
+            </div>
+            <div class="login-body">
+              <div class="login-content">
+                <input type="login-textForm" placeholder="아이디">
+                <label class="login--form">아이디</label>
+              </div>
+              <div class="login-content">
+                <input type="login-textForm" placeholder="비밀번호">
+                <label class="login--form">비밀번호</label>
+              </div>
+              <button type="register-btn">로그인</button>
+              <a href="#">아이디찾기</a>
+              <a href="#">비밀번호찾기</a>
+            </div>
+        </div>
+
+</body>
+</html>
