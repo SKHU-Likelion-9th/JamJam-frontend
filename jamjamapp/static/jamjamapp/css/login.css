@@ -64,3 +64,31 @@ h2 {
     font-size: 50px;
 }
 
+/* findpw.html */
+
+.find-box {
+    width:25%;
+    height: 600px;
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    right: 20%;
+    padding: 50px 70px 50px 70px; 
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    color: #c56172;
+}
+
+.findpw {
+    font-family: 'IM_Hyemin-Bold';
+}
+
+.form-group {
+    font-size: 25px;
+    margin-bottom: 10%;
+    padding: 10% 10%;
+}
+
+.card-footer {
+    padding: 10% 10%;
+}

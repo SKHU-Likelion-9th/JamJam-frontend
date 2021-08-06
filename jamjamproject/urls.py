@@ -22,6 +22,8 @@ urlpatterns = [
     path('', jamjamapp.views.layout1, name='layout1'),
     path('layout2/', jamjamapp.views.layout2, name='layout2'),
     path('login', jamjamapp.views.login, name='login'),
+    path('signup', jamjamapp.views.signup, name='signup'),
+    path('findpw', jamjamapp.views.findpw, name='findpw'),
     path('main/', jamjamapp.views.main, name='main'),
     path('community/', jamjamapp.views.community, name='community'),
     path('commu_write/', jamjamapp.views.commu_write, name='commu_write'),
@@ -45,4 +47,5 @@ urlpatterns = [
     path('diary_edit/', jamjamapp.views.diary_edit, name='diary_edit'),
     path('jampay/', jamjamapp.views.jampay, name='jampay'),
     path('scrap/', jamjamapp.views.scrap, name='scrap'),
+    path('course_map/', jamjamapp.views.course_map, name='course_map'),
 ]

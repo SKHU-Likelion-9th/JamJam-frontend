@@ -10,7 +10,13 @@ def layout2(request):
     return render(request, 'layout2.html')
 
 def login(request):
-    return render(request, 'login.html')
+    return render(request, 'login/login.html')
+
+def signup(request):
+    return render(request, 'login/signup.html')
+
+def findpw(request):
+    return render(request, 'login/findpw.html')
 
 def main(request):
     return render(request, 'main.html')
@@ -59,6 +65,9 @@ def course_write(request):
 
 def course_edit(request):
     return render(request, 'course/course_edit.html')
+
+def course_map(request):
+    return render(request, 'course_map.html')
 
 def purchase_example(request):
     return render(request, 'mypage/purchase_example.html')

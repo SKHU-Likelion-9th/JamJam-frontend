@@ -7,7 +7,7 @@
 
 {% endblock %}
 {% block contents %}
-  <link href="{% static 'jamjamapp/css/course.css' %}" rel="stylesheet" />
+<link href="{% static 'jamjamapp/css/course.css' %}" rel="stylesheet" />
   
 <div class="course-body">
 
@@ -16,8 +16,41 @@
     <div class="see-things"><a class="course-nav" href="#">볼거리</a></div>
     <div class="eat-things"><a class="course-nav" href="#">먹을거리</a></div>
 
-    <button class="search-btn" type="submit">
-    <a class="course-search" href="#">지역 검색</a></button>
+    <br>
+    <br>
+
+    <button class="region-btn" onclick="showPopup()">지역 검색</button>
+    
+    <div id="popup" class="hide">
+      <div class="content">
+        <p>
+
+          <img src="{% static 'jamjamapp/img/map.jpg' %}" alt="map" usemap="#popup_map" width="522" height="854">
+
+          <map name="popup_map" id="popup_map">
+            <area shape="rect" coords="116,168,167,198" href="course_map.html" alt="서울" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="94,122,142,154" href="course_map.html" alt="인천" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="162,220,216,255" href="course_map.html" alt="경기" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="323,136,379,169" href="course_map.html" alt="강원" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="250,273,306,308" href="course_map.html" alt="충북" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="373,352,431,389" href="course_map.html" alt="경북" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="352,454,405,488" href="course_map.html" alt="대구" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="113,330,167,363" href="course_map.html" alt="충남" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="159,463,218,500" href="course_map.html" alt="전북" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="190,320,246,355" href="course_map.html" alt="세종" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="204,404,260,440" href="course_map.html" alt="대전" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="116,552,175,588" href="course_map.html" alt="광주" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="117,614,172,650" href="course_map.html" alt="전남" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="304,533,360,565" href="course_map.html" alt="경남" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="451,491,507,527" href="course_map.html" alt="울산" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="424,553,478,587" href="course_map.html" alt="부산" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+            <area shape="rect" coords="85,802,139,835" href="course_map.html" alt="제주" target="_self" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+          </map>
+
+        </p>
+        <button onclick="closePopup()">닫기</button>
+      </div>
+    </div>
 
      <div class="course-filter">
         <select>
@@ -143,5 +176,7 @@
   </div>
 
 </div>
+
+<script type="text/javascript" src="../static/jamjamapp/js/popup.js"></script>
 
 {% endblock %}
