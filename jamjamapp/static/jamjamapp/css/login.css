@@ -7,11 +7,14 @@
     font-style: normal;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
 
 body {
     margin : 0px;
     background-color: #FFF0F2;
-    overflow: hidden;
 }
 
 .login-container {
@@ -47,7 +50,7 @@ body {
 .login-content {
     position: relative;
     margin: 10px 0;
-    width: 400px;
+    width: 100%;
     height: 60px;
 }
 
@@ -168,4 +171,82 @@ h2 {
 
 .card-footer {
     padding: 10% 10%;
+}
+
+/* sigup.html */
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 60px;
+}
+
+.signup-box {
+    width:30%;
+    height: 650px;
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    padding: 50px 70px 50px 70px; 
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 40%;
+    grid-gap: 2%;
+    font-family: 'IM_Hyemin-Bold'
+}   
+
+.signup-content {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    
+}
+
+.nameInput {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.signup-btn-con {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.login-btn {
+    grid-row: 2/3;
+}
+
+.nameInput {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    bottom: 10px;
+    position: relative;
+}
+
+.name-spanOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 90%;
+    height: 5px;
+    background-color: pink;
+    opacity: 0.2;
+}
+
+.signup-profilesmall-content {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.gender-select {
+    justify-content: center;
+    top: 20px;
 }
