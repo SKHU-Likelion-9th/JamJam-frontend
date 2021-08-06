@@ -10,7 +10,13 @@ def layout2(request):
     return render(request, 'layout2.html')
 
 def login(request):
-    return render(request, 'login.html')
+    return render(request, 'login/login.html')
+
+def signup(request):
+    return render(request, 'login/signup.html')
+
+def findpw(request):
+    return render(request, 'login/findpw.html')
 
 def main(request):
     return render(request, 'main.html')
