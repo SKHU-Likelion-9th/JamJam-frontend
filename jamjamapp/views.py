@@ -89,3 +89,6 @@ def jampay(request):
     
 def scrap(request):
     return render(request, 'scrap.html')
+
+def pay(request):
+    return render(request, 'shop/pay.html')
