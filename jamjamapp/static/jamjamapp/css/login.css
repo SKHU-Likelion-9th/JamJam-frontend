@@ -10,7 +10,8 @@
 
 body {
     margin : 0px;
-    background-color: #FFC4CE;
+    background-color: #FFF0F2;
+    overflow: hidden;
 }
 
 .login-container {
