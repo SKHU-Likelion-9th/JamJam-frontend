@@ -66,9 +66,6 @@ def course_write(request):
 def course_edit(request):
     return render(request, 'course/course_edit.html')
 
-def course_map(request):
-    return render(request, 'course_map.html')
-
 def purchase_example(request):
     return render(request, 'mypage/purchase_example.html')
 

@@ -518,3 +518,73 @@ select::-ms-expand {
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
   }
+
+  .map1 {
+    position:fixed;
+    top: 150px;
+    left: 400px;
+    z-index: 0;
+  }
+
+  .map2 {
+    position:fixed;
+    top: 150px;
+    left: 1000px;
+    z-index: 2;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .map3 {
+    position:fixed;
+    width: 400px;
+    height: 800px;
+    top: 150px;
+    left: 1000px;
+    z-index: 1;
+    background-color: white;
+    padding: 10px 5px;
+  }
+
+  .region-where {
+      background-color:#ff7a91;
+      opacity: 70%;
+      font-size: 30px;
+      font-family: 'IM_Hyemin-Bold';
+      padding: 5px 5px;
+      border-radius: 25px;
+  }
+
+  .region-where:hover {
+      color: white;
+      cursor: pointer;
+  }
+
+  .map-close {
+    position:fixed;
+    top: 100px;
+    left: 1500px;
+    z-index: 0;
+    font-size: 25px;
+    font-family: 'IM_Hyemin-Bold';
+    padding: 10px 10px;
+    border-radius: 25px;
+  }
+
+  .map-close:hover {
+    color:#ff7a91;
+    cursor: pointer;
+}
+
+.region-name {
+    z-index: 4;
+    font-size: 25px;
+    left: 500px;
+    list-style-type: none;
+}
+
+input[type="checkbox"]{
+    width: 20px; /*Desired width*/ 
+    height: 20px; /*Desired height*/
+    cursor: pointer;
+}
