@@ -49,4 +49,5 @@ urlpatterns = [
     path('scrap/', jamjamapp.views.scrap, name='scrap'),
     path('course_map/', jamjamapp.views.course_map, name='course_map'),
     path('pay/', jamjamapp.views.pay, name='pay'),
+    path('completepay/',jamjamapp.views.completepay, name='completepay'),
 ]

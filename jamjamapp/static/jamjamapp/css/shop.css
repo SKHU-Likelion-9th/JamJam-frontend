@@ -242,7 +242,7 @@
     display: grid;
     height: 920px;
     grid-template-columns: 15% 10% 10% 5% 30% 5% 30% ;
-    grid-template-rows: 15% 10% 1fr 1fr 20% 20%;
+    grid-template-rows: 15% 10% 1fr 15% 10% 20%;
 }
 
 .pay-container h1{
@@ -254,11 +254,12 @@
 }
 
 .pay-container h2 {
-    font-size: 20px;
+    font-size: 30px;
     grid-column: 5/6;
     grid-row:3/4;
     text-align: center;
     justify-content: center;
+    color: #c56172;
 }
 
 .pay-container h3 {
@@ -268,12 +269,13 @@
     text-align: center;
 }
 
-.img-pay {
+.pay-box {
     grid-column: 5/6;
     grid-row: 5/6;
     width: 50%;
     margin: 0 auto;
     cursor:pointer;
+    background-color: #FFB5C3;
 }
 
 .img-jam {

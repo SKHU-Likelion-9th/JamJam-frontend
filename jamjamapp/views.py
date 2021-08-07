@@ -92,3 +92,6 @@ def scrap(request):
 
 def pay(request):
     return render(request, 'shop/pay.html')
+
+def completepay(request):
+    return render(request, 'shop/completepay.html')
