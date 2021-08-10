@@ -49,4 +49,10 @@ urlpatterns = [
     path('scrap/', jamjamapp.views.scrap, name='scrap'),
     path('pay/', jamjamapp.views.pay, name='pay'),
     path('completepay/',jamjamapp.views.completepay, name='completepay'),
+    path('bookmark_category/', jamjamapp.views.bookmark_category, name='bookmark_category'),
+    path('bookmark_create/', jamjamapp.views.bookmark_create, name='bookmark_create'),
+    path('bookmark_delete/', jamjamapp.views.bookmark_delete, name='bookmark_delete'),
+    path('bookmark_detail/', jamjamapp.views.bookmark_detail, name='bookmark_detail'),
+    path('bookmark_list/', jamjamapp.views.bookmark_list, name='bookmark_list'),
+    path('bookmark_update/', jamjamapp.views.bookmark_update, name='bookmark_update'),
 ]

@@ -1,5 +1,11 @@
 /* mypage.html */
-
+.mypage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    align-items:center;
+    justify-content: center;
+    grid-column-gap: 5%;
+}
 
 .mypage-box {
     background-color: #FEEFF2;
