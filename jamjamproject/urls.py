@@ -47,4 +47,6 @@ urlpatterns = [
     path('diary_edit/', jamjamapp.views.diary_edit, name='diary_edit'),
     path('jampay/', jamjamapp.views.jampay, name='jampay'),
     path('scrap/', jamjamapp.views.scrap, name='scrap'),
+    path('pay/', jamjamapp.views.pay, name='pay'),
+    path('completepay/',jamjamapp.views.completepay, name='completepay'),
 ]

@@ -501,41 +501,49 @@ select::-ms-expand {
     z-index: 1;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-  }
+}
   
-  #popup.hide {
+#popup.hide {
     display: none;
-  }
+}
   
-  #popup.multiple-filter {
+#popup.multiple-filter {
     backdrop-filter: blur(4px) grayscale(90%);
     -webkit-backdrop-filter: blur(4px) grayscale(90%);
-  }
+}
   
-  #popup .content {
+#popup .content {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-  }
+}
 
-  .map1 {
+
+
+#maplist.hidden {
+    display: none;
+}
+
+#maplist.show {
+    display:inline;
+}
+
+.map1 {
     position:fixed;
-    top: 150px;
-    left: 400px;
     z-index: 0;
   }
 
-  .map2 {
+.map2 {
     position:fixed;
-    top: 150px;
-    left: 1000px;
+    top: 23px;
+    left: 1200px;
     z-index: 2;
     background-color: white;
     padding: 20px;
   }
 
-  .map3 {
+.map3 {
     position:fixed;
     width: 400px;
     height: 800px;
@@ -546,7 +554,7 @@ select::-ms-expand {
     padding: 10px 5px;
   }
 
-  .region-where {
+.region-where {
       background-color:#ff7a91;
       opacity: 70%;
       font-size: 30px;
@@ -555,12 +563,12 @@ select::-ms-expand {
       border-radius: 25px;
   }
 
-  .region-where:hover {
+.region-where:hover {
       color: white;
       cursor: pointer;
   }
 
-  .map-close {
+.map-close {
     position:fixed;
     top: 100px;
     left: 1500px;
@@ -569,16 +577,37 @@ select::-ms-expand {
     font-family: 'IM_Hyemin-Bold';
     padding: 10px 10px;
     border-radius: 25px;
-  }
+    }
+  
 
-  .map-close:hover {
+.map-close:hover {
+    color:#ff7a91;
+    cursor: pointer;
+    }
+
+.map-reset {
+    position:fixed;
+    top: 160px;
+    left: 1500px;
+    z-index: 0;
+    font-size: 25px;
+    font-family: 'IM_Hyemin-Bold';
+    padding: 10px 10px;
+    border-radius: 25px;
+    }
+
+.map-reset:hover {
     color:#ff7a91;
     cursor: pointer;
 }
 
+.toggle-map {
+    display: hidden;
+}
+
 .region-name {
     z-index: 4;
-    font-size: 25px;
+    font-size: 21px;
     left: 500px;
     list-style-type: none;
 }

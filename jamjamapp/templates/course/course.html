@@ -21,33 +21,163 @@
     <button class="region-btn" onclick="showPopup()">지역 검색</button>
     
     <div id="popup" class="hide">
-      <div class="content">
+
           <div class="map1">
 
             <img src="{% static 'jamjamapp/img/map.jpg' %}" alt="" width="522" height="854"
-            style="position:fixed; top: 150px; left: 400px; z-index: 0;">
+            style="position:fixed; top: 150px; left: 600px; z-index: 0;">
 
             <div class="map-child" style="position: fixed;
             transform: translate(-50%, -50%);
-            top: 330px; left: 560px; z-index: 2;">
+            top: 330px; left: 760px; z-index: 2;">
             <button class="region-where" onclick="showseoul()">서울</button>
             </div>
-
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 390px; left: 790px; z-index: 2;">
+            <button class="region-where" onclick="showgyeonggi()">경기</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 290px; left: 700px; z-index: 2;">
+            <button class="region-where" onclick="showincheon()">인천</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 290px; left: 930px; z-index: 2;">
+            <button class="region-where" onclick="showgangwon()">강원</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 460px; left: 850px; z-index: 2;">
+            <button class="region-where" onclick="showchungbuk()">충북</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 510px; left: 800px; z-index: 2;">
+            <button class="region-where" onclick="showsejong()">세종</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 510px; left: 720px; z-index: 2;">
+            <button class="region-where" onclick="showsejong()">충남</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 510px; left: 1000px; z-index: 2;">
+            <button class="region-where" onclick="showgyeongbuk()">경북</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 565px; left: 800px; z-index: 2;">
+            <button class="region-where" onclick="showdaejeon()">대전</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 610px; left: 980px; z-index: 2;">
+            <button class="region-where" onclick="showdaegu()">대구</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 640px; left: 790px; z-index: 2;">
+            <button class="region-where" onclick="showjeonbuk()">전북</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 730px; left: 750px; z-index: 2;">
+            <button class="region-where" onclick="showgwangju()">광주</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 790px; left: 740px; z-index: 2;">
+            <button class="region-where" onclick="showgwangju()">전남</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 700px; left: 940px; z-index: 2;">
+            <button class="region-where" onclick="showgyeongnam()">경남</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 660px; left: 1070px; z-index: 2;">
+            <button class="region-where" onclick="showulsan()">울산</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 730px; left: 1040px; z-index: 2;">
+            <button class="region-where" onclick="showbusan()">부산</button>
+            </div>
+            <div class="map-child" style="position: fixed;
+            transform: translate(-50%, -50%);
+            top: 970px; left: 710px; z-index: 2;">
+            <button class="region-where" onclick="showjeju()">제주</button>
+            </div>
           </div>
 
           <div class="map2">
-            <ui class="region-name" id="seoul">
+            <h2>지역을 선택해주세요!</h2>
+            <nav id='maplist'>
+                <ui class="region-name" id="seoul">
 
-            </ui>
-          </div>
+                </ui>
+                <ui class="region-name" id="gyeonggi">
 
-          <div class="map3">
-            <h2 style="margin-top: 50px;">지역을</h2><h2>선택하세요!</h2>
+                </ui>
+                <ui class="region-name" id="incheon">
+
+                </ui>
+                <ui class="region-name" id="gangwon">
+
+                </ui>
+                <ui class="region-name" id="chungbuk">
+
+                </ui>
+                <ui class="region-name" id="sejong">
+
+                </ui>
+                <ui class="region-name" id="chungnam">
+
+                </ui>
+                <ui class="region-name" id="gyeongbuk">
+
+                </ui>
+                <ui class="region-name" id="daejeon">
+
+                </ui>
+                <ui class="region-name" id="daegu">
+
+                </ui>
+                <ui class="region-name" id="jeonbuk">
+
+                </ui>
+                <ui class="region-name" id="gwangju">
+
+                </ui>
+                <ui class="region-name" id="jeonnam">
+
+                </ui>
+                <ui class="region-name" id="gyeongnam">
+
+                </ui>
+                <ui class="region-name" id="ulsan">
+
+                </ui>
+                <ui class="region-name" id="busan">
+
+                </ui>
+                <ui class="region-name" id="jeju">
+
+              </ui>
+            </nav>
           </div>
         
         <button class="map-close" onclick="closePopup()">닫기</button>
-      </div>
+        <button class="map-reset" onclick="resetPopup()">초기화</button>
+      
     </div>
+
+    
+  <div class="contents">
 
      <div class="course-filter">
         <select>
@@ -171,10 +301,11 @@
 
         </div>
   </div>
+</div> 
 
 </div>
-
 <script type="text/javascript" src="../static/jamjamapp/js/popup.js"></script>
 <script type="text/javascript" src="../static/jamjamapp/js/region.js"></script>
+<script type="text/javascript" src="../static/jamjamapp/js/reset.js"></script>
 
 {% endblock %}
