@@ -520,13 +520,8 @@ select::-ms-expand {
 }
 
 
-
 #maplist.hidden {
     display: none;
-}
-
-#maplist.show {
-    display:inline;
 }
 
 .map1 {

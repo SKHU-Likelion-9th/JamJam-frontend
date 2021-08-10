@@ -116,7 +116,7 @@
 
           <div class="map2">
             <h2>지역을 선택해주세요!</h2>
-            <nav id='maplist'>
+            <div id='maplist'>
                 <ui class="region-name" id="seoul">
 
                 </ui>
@@ -168,11 +168,11 @@
                 <ui class="region-name" id="jeju">
 
               </ui>
-            </nav>
+            </div>
           </div>
         
         <button class="map-close" onclick="closePopup()">닫기</button>
-        <button class="map-reset" onclick="resetPopup()">초기화</button>
+        <button class="map-reset" onclick="deleteText()">초기화</button>
       
     </div>
 
@@ -306,6 +306,4 @@
 </div>
 <script type="text/javascript" src="../static/jamjamapp/js/popup.js"></script>
 <script type="text/javascript" src="../static/jamjamapp/js/region.js"></script>
-<script type="text/javascript" src="../static/jamjamapp/js/reset.js"></script>
-
 {% endblock %}
