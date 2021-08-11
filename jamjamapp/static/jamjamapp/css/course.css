@@ -173,6 +173,7 @@ select::-ms-expand {
       color: white;
   }
 
+/*
   .detail-scrap {
       width: 100%;
       color: white;
@@ -204,6 +205,88 @@ select::-ms-expand {
     font-size: 25px;
     border: none;
  }
+ */
+
+ #category {
+    width: 20%;
+    padding: .8em .5em;
+    font-family: inherit;
+    background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #fff;
+    border-radius: 0px;
+    color: #c56172;
+    font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
+    margin-left: 7%;
+  }
+  
+.bookmark-scrap-btn {
+    all: unset;
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: pink;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bookmark-scrap-btn:hover {
+    background-color: #fd99aa;
+    color: white;
+}
+
+#category::-ms-expand {
+    /* for IE 11 */
+    display: none;
+}
+
+#bookmark-url-body {
+    display: none;
+}
+
+#bookmark-url-body.show {
+    display: block;
+}
+
+.bookmark-create-input {
+    all: unset;
+    position: relative;
+    left: 2%;
+}
+
+.bookmark-spanoverlay {
+    position: relative;
+    bottom: 0;
+    right: 25%;
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    height: 5px;
+    background-color: #fd99aa;
+    opacity: 0.2;
+}
+
+.add-btn {
+    all: unset;
+    width: 180px;
+    height: 70px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: pink;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.add-btn:hover {
+    background-color: #fd99aa;
+    color: white;
+}
 
 
   .detail-img {
@@ -332,11 +415,11 @@ li .comment-btn {
 /* course_detail.html */
 
 
-.course-h3 {
+.content-item h3 {
     display: inline-block;
     text-align: left;
-    margin-left: 15%;
-    width: 10%;
+    margin-left: 10%;
+    width: 15%;
     font-weight: bold;
     color: #c56172;
     font-size: 25px;
@@ -372,6 +455,8 @@ select::-ms-expand {
     /* for IE 11 */
     display: none;
 }
+
+
 
 .course-input {
     width: 60%;

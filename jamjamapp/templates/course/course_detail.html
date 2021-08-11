@@ -16,26 +16,57 @@
                 미리 예매가 필요하고 입장시간도 확인해보세요! 경복궁은 태조 4년(1395)에 창건되어 임진왜란으로
                 소실, 이후 흥선대원군의 주도로 중건되었으니 조선 제일의 궁권이라 할 수 있답니다.</p>
             <br>
-            <div class="detail-scrap">
+            <!-- <div class="detail-scrap">
                 <h3>이 코스 스크랩하기</h3>
                 <select class="scrap-where">
                     <option>꼭 가보고 싶은 곳</option>
                     <option>100일 기념</option>
                 </select>
                 <button class="save-btn">저장</button>
-            </div>
-    </div>
-            </div>
+            </div> -->
         </div>
-        <img class="detail-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Seoul_Gyeongbok-gung-3.jpg/414px-Seoul_Gyeongbok-gung-3.jpg">
     </div>
 
+        <img class="detail-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Seoul_Gyeongbok-gung-3.jpg/414px-Seoul_Gyeongbok-gung-3.jpg">
+    
     <section class="content-item" id="comments">
         <div class="container">   
             <div class="row">
                 <div class="col-sm-8">
                     <h3>3 Comments</h3>
+                    <button class="bookmark-scrap-btn" onclick='bookmark()'>북마크에 추가하기</button>
                     
+                    <div id="bookmark-url-body" class="show">
+                        <div class="url-plus">
+                            <label class="bookmark-create-Label">URL추가</label>
+                            <input type="text" required class="bookmark-create-input" placeholder="URL입력">
+                                <span class="bookmark-spanoverlay"></span>
+                        </div>
+                        <div class="url-name">
+                            <label class="bookmark-create-Label">URL이름</label>
+                            <input type="text" required class="bookmark-create-input" placeholder="URL이름">
+                            <span class="bookmark-spanoverlay"></span>
+                        </div>
+                        <div class="url-category">
+                            <select id="category">
+                                <option>--카테고리 선택--</option>
+                                <option>광현</option>
+                                <option>주영</option>
+                                <option>민정</option>
+                                <option>은혜</option>
+                                <option>예찬</option>
+                            </select>
+                        </div>
+                        <div class="url-btn">
+                            <button class="add-btn">등록</button>
+                        </div>
+                    </div>
+                    <script>
+                        function bookmark(){
+                            document.getElementById("bookmark-url-body").classList.toggle("show");
+                        }
+                </script>
+
                     <!-- COMMENT 1 - START -->
                     <div class="media comment-media">
                         <a class="pull-left" href="#"><img class="media-object" src="https://www.interstatedevelopment.com/wp-content/uploads/2019/04/generic-avatar-1.jpg" alt=""></a>

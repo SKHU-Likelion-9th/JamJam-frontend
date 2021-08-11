@@ -46,9 +46,40 @@
         </svg>
         <h4 class="icon">2</h4>
 
-        <div class="commu-write-btn">
+        <div class="commu-write-btn" onclick="bookmark()">
             <button class="write-btn" style="display: flex; width: 15vh; justify-content: center; align-items: right; margin-bottom: 40px; margin-left: 10px;">스크랩</button>
         </div>
+
+        <div id="bookmark-url-body" class="show">
+            <div class="url-plus">
+                <label class="bookmark-create-Label">URL추가</label>
+                <input type="text" required class="bookmark-create-input" placeholder="URL입력">
+                    <span class="bookmark-spanoverlay"></span>
+            </div>
+            <div class="url-name">
+                <label class="bookmark-create-Label">URL이름</label>
+                <input type="text" required class="bookmark-create-input" placeholder="URL이름">
+                <span class="bookmark-spanoverlay"></span>
+            </div>
+            <div class="url-category">
+                <select id="category">
+                    <option>--카테고리 선택--</option>
+                    <option>광현</option>
+                    <option>주영</option>
+                    <option>민정</option>
+                    <option>은혜</option>
+                    <option>예찬</option>
+                </select>
+            </div>
+            <div class="url-btn">
+                <button class="add-btn">등록</button>
+            </div>
+        </div>
+        <script>
+            function bookmark(){
+                document.getElementById("bookmark-url-body").classList.toggle("show");
+            }
+    </script>
 
         <hr class="commu-hr">
 

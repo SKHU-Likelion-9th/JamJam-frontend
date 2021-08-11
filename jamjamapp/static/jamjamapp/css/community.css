@@ -519,3 +519,97 @@ li .comment-btn {
     background-color: #fff;
     border: #fff;
 }
+
+
+/* commu_detail > javascript/bookmark */
+#category {
+    width: 20%;
+    padding: .8em .5em;
+    font-family: inherit;
+    background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #fff;
+    border-radius: 0px;
+    color: #c56172;
+    font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
+    margin-left: 7%;
+  }
+  
+.bookmark-scrap-btn {
+    all: unset;
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: pink;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bookmark-scrap-btn:hover {
+    background-color: #fd99aa;
+    color: white;
+}
+
+#category::-ms-expand {
+    /* for IE 11 */
+    display: none;
+}
+
+#bookmark-url-body {
+    margin-left: 15%;
+    display: none;
+}
+
+#bookmark-url-body.show {
+    display: block;
+}
+
+.bookmark-create-input {
+    all: unset;
+    position: relative;
+    left: 2%;
+}
+
+.bookmark-spanoverlay {
+    position: relative;
+    bottom: 0;
+    right: 25%;
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    height: 5px;
+    background-color: #fd99aa;
+    opacity: 0.2;
+}
+
+.add-btn {
+    all: unset;
+    width: 180px;
+    height: 70px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: pink;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.add-btn:hover {
+    background-color: #fd99aa;
+    color: white;
+}
+
+.bookmark-create-Label {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family : 'IM_Hyemin-Bold';
+    font-size: 25pt;
+    color: #c56172;
+}
